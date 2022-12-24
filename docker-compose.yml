@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  services:
+    build: .
+    command: python jojobot.py
+    restart: always
+    networks:
+    - network
+
+networks:
+  network:
+    bridge
+  
